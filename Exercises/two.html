@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="#8fbc8f" tex>
+<script>
+    // document.write("567*678=");
+    // function A(){
+    //     alert("Ты уже две секунды смотришь на этот пример! Ответ:"+567*678);
+    //     //input message on the page
+    // };
+    // setTimeout(A,2000);//set delay time
+
+    let hello = prompt('Привет! Как тебя зовут?', "Имя");
+    //window with a question and string for answer
+    let isName = confirm("`Можно к тебе обращаться "+hello+", которое вы вели в певом окне?`");//window for question and button
+    if (isName){
+    alert( "Здравствуй,"+hello+"!" );
+    }
+    else{
+        let CorrectName = prompt('А как можно?', "Ваше имя");
+        alert("Приятно познакомиться, "+CorrectName);
+        hello=CorrectName;
+    }
+    document.write("Привет, "+hello);
+</script>
+</body>
+</html>
